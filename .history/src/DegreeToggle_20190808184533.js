@@ -22,10 +22,10 @@ const DegreeToggle = ({degreeType, updateForecastDegree}) => {
         name="degree-type"
         id="fahrenheit"
         value="fahrenheit"
-        defaultChecked={degreeType === "fahrenheit"}
+        checked={degreeType === "fahrenheit"}
         onChange={updateForecastDegree}
         />
-        <label className="form-check-label" for="fahrenheit">Fahrenheit</label>
+        <label className="form-check-label" for="fahrenheit">fahrenheit</label>
       </div>
     </React.Fragment>
   )

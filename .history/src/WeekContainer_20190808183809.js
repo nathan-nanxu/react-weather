@@ -14,7 +14,7 @@ class WeekContainer extends React.Component {
       updateForecastDegree = (event) => {
         this.setState({
           degreeType : event.target.value
-        }, () => console.log(this.state.degreeType))
+        }, () => console.log(this.degreeType))
       }
   
     componentDidMount = () => {
@@ -32,7 +32,7 @@ class WeekContainer extends React.Component {
     }
 
     formatDayCards = () => {
-        return this.state.dailyData.map((reading, index) => <DayCard degreeType={this.state.degreeType} reading={reading} key={index} />)
+        return this.state.dailyData.map((reading, index) => <DayCard reading={reading} key={index} />)
       }
     
   

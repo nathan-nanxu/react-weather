@@ -32,7 +32,7 @@ class WeekContainer extends React.Component {
     }
 
     formatDayCards = () => {
-        return this.state.dailyData.map((reading, index) => <DayCard degreeType={this.state.degreeType} reading={reading} key={index} />)
+        return this.state.dailyData.map((degreeType, reading, index) => <DayCard degreeType={degreeType} reading={reading} key={index} />)
       }
     
   

@@ -10,7 +10,7 @@ const DegreeToggle = ({degreeType, updateForecastDegree}) => {
         name="degree-type"
         id="celsius"
         value="celsius"
-        defaultChecked={degreeType === "celsius"}
+        checked={degreeType === "celsius"}
         onChange={updateForecastDegree}
         />
         <label className="form-check-label" for="celsius">Celsius</label>
